@@ -45,6 +45,7 @@ $nama .= "Maritza"; // ($nama = $nama . "Maritza")
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icons" href="">
 </head>
 <body>
     <h1>selamat datang <?php echo $nama; ?></h1>
