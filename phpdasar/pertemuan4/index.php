@@ -37,8 +37,23 @@
 
 
     $rentandetik_akulahir = mktime(0,0,0,2,7,2009);
-    $harilahir = date("l", $rentandetik_akulahir)
+    $harilahir = date("l", $rentandetik_akulahir);
 
+    /*
+        FUNCTION STRING:
+        - strlen(), menghitung panjang string
+        - strcmp(), membandingkan 2 string
+        - explode(), memecah string menjadi array
+        - htmlspecialchars()
+    */
+
+    /*
+        var_dump, fungsi untuk mencetak isi dari variabel
+        isset(), mengecek apakah variabelnya sudah dibikin apa belum
+        empty(), apakah variabel yang tersedia memiliki value atau tidak
+        die(), memberhentikan program
+        sleep(), memberhentikan sementara
+    */
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +67,7 @@
     <h1>selamat datang</h1>
     <p>
         <?php 
-            echo "kamu lahir di hari $harilahir";       
+            echo "kamu lahir di hari $harilahir <br>";      
         ?>
     </p>
 </body>
