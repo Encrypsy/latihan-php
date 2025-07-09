@@ -74,7 +74,9 @@
             "fandom" => "REVELUV",
             "logo" => "redvelvet.jpg"
         ],
-    ]
+    ];
+
+    
 ?>
 
 <!DOCTYPE html>
