@@ -153,7 +153,7 @@
 
         <div class="container">
             <div class="container-judul">
-                <h2>AESPA PAGE</h2>
+                <h2>RED VELVET PAGE</h2>
             </div>
             <div class="content">
                 <div class="container-content">

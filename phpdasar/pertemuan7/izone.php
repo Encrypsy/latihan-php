@@ -153,7 +153,7 @@
 
         <div class="container">
             <div class="container-judul">
-                <h2>AESPA PAGE</h2>
+                <h2>IZONE PAGE</h2>
             </div>
             <div class="content">
                 <div class="container-content">

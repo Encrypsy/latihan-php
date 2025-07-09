@@ -17,9 +17,9 @@
         [ // > AESPA
             "nama" => "aespa",
             "agensi" => "SM entertainment",
-            "tanggal debut" => "17 november 2020",
-            "lagu debut" => "black mamba",
-            "jumlah anggota" => 4,
+            "tanggaldebut" => "17 november 2020",
+            "lagudebut" => "black mamba",
+            "jumlahanggota" => 4,
             "anggota" => ['karina', 'giselle', 'winter', 'ningning'],
             "fandom" => "MY",
             "logo" => "aespa.jpg"
@@ -27,8 +27,8 @@
         [ // > KATSEYE
             "nama" => "katseye",
             "agensi" => "HYBE x Geffen Records",
-            "tanggal debut" => "16 agustus 2024",
-            "lagu debut" => "debut",
+            "tanggaldebut" => "16 agustus 2024",
+            "lagudebut" => "debut",
             "jumlah anggota" => 6,
             "anggota" => ['daniela', 'sophia', 'lara', 'manon', 'megan', 'yoonchae'],
             "fandom" => "eyekons",
@@ -37,7 +37,7 @@
         [ // > TWICE
             "nama" => "twice",
             "agensi" => "JYP entertainment",
-            "tanggal debut" => "20 oktober 2015",
+            "tanggaldebut" => "20 oktober 2015",
             "lagu debut" => "like ooh-aah",
             "jumlah anggota" => 9,
             "anggota" => ['nayeon', 'jeongyeon', 'momo', 'sana', 'jihyo', 'mina', 'dahyun', 'chaeyeong', 'tzuyu'],
@@ -47,9 +47,9 @@
         [ // > IZONE
             "nama" => "izone",
             "agensi" => "Off the Record Entertainment",
-            "tanggal debut" => "29 oktober 2018",
-            "lagu debut" => "la vien en rose",
-            "jumlah anggota" => 12,
+            "tanggaldebut" => "29 oktober 2018",
+            "lagudebut" => "la vien en rose",
+            "jumlahanggota" => 12,
             "anggota" => ['eunbi', 'sakura','hyewon', 'yena', 'chaeyeon', 'chaewon', 'minju', 'nako', 'hitomi', 'yuri', 'yujin', 'wonyoung'],
             "fandom" => "WIZONE",
             "logo" => "izone.jpg"
@@ -57,19 +57,19 @@
         [ // > BLACKPINK
             "nama" => "blackpink",
             "agensi" => "YG entertainment",
-            "tanggal debut" => "8 agustus 2016",
-            "lagu debut" => "boombayah",
-            "jumlah anggota" => 4,
+            "tanggaldebut" => "8 agustus 2016",
+            "lagudebut" => "boombayah",
+            "jumlahanggota" => 4,
             "anggota" => ['jisoo', 'jennie', 'rose', 'lisa'],
             "fandom" => "BLINK",
             "logo" => "blackpink.jpg"
         ],
         [ // > RED VELVET
-            "nama" => "red velvet",
+            "nama" => "redvelvet",
             "agensi" => "SM entertainment",
-            "tanggal debut" => "8 agustus 2014",
-            "lagu debut" => "happiness",
-            "jumlah anggota" => 5,
+            "tanggaldebut" => "8 agustus 2014",
+            "lagudebut" => "happiness",
+            "jumlahanggota" => 5,
             "anggota" => ['irene', 'seulgi', 'joy', 'wendy', 'yeri'],
             "fandom" => "REVELUV",
             "logo" => "redvelvet.jpg"
@@ -107,12 +107,17 @@
         <ul>
             <?php foreach($girlgroups as $girlgroup): ?>
                 <li>
-                    <a href="<?php echo "aespa.php?nama=", $girlgroup["nama"];?>">
-                        <?= $girlgroup["nama"]?>
+                    <a href="<?= $girlgroup["nama"] ?>.php?
+                        nama=<?= $girlgroup["nama"] ?>&
+                        tanggaldebut=<?=$girlgroup["tanggaldebut"] ?? 'Tidak tersedia';?>&
+                        lagudebut=<?=$girlgroup["lagudebut"] ?? 'Tidak tersedia';?>&
+                        fandom=<?=$girlgroup["fandom"];?>&
+                        logo=<?=$girlgroup["logo"];?>">
+                        <?php echo $girlgroup["nama"]; ?>
                     </a>
                 </li>
             <?php endforeach;?>
         </ul>
-        <a href=""></a>
+
 </body>
 </html>
